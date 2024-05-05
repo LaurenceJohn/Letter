@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body{
+    margin:0;
+}
+
+.row{
+    margin:0;
+}
+
+h1{
+    font-size: 120px;
+    color:#85654E;
+}
+
+.subtitle{
+    top:-25px;
+    color:#85654E;;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.tag {
+    opacity: 0;
+    transition: all 2s;
+  }
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.row{
+    background-color:#E3CAA5;
+}
+
+.second-row{
+    background-image: url("../images/flowers2.png"); 
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 576px) {
+    .second-row {
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: right 3% bottom 20%;
+    }
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.background-image {
+    width:300px;
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 0;
+    opacity: 0.5; 
+    pointer-events: none; 
+}
+
+.header-content h1,
+.header-content h6 {
+    position: relative;
+    z-index: 2; 
+}
